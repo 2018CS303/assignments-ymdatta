@@ -15,10 +15,10 @@
 # Creation of Training Environment:
 - The ``Ubuntu`` container we will get using docker is a very light one and it doesn't have necessary features in it. So, we will create a new container upon that and we will use it.
 
-- First, create a bare-metal ``Ubuntu`` container and use it's shell by running 'docker run --name barecont -it ubuntu /bin/bash'. ``-it`` flag opens the container in **interactive terminal** mode.
+- First, create a bare-metal ``Ubuntu`` container and use it's shell by running `docker run --name barecont -it ubuntu /bin/bash`. ``-it`` flag opens the container in **interactive terminal** mode.
 - Add Packages that may be needed by the individuals who will be using it. Ex: Compilers like gcc, debuggers like gdb etc to run **C** language programs.
 - Now, exit from the shell by typing exit`` on the container's command line.
-- Now, the **important** part, we can create a new container upon the ``barecont`` container by running 'docker commit barecont infra:v1' (``infra`` is the image name with ``v1`` tag).
+- Now, the **important** part, we can create a new container upon the ``barecont`` container by running `docker commit barecont infra:v1` (``infra`` is the image name with ``v1`` tag).
 - The ``infra:v1`` image will be used to create containers for individuals. We can also push our custom containers to docker hub and pull from it whenever required.
 
 # Allocation of Container for each user:
