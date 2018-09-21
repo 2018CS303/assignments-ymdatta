@@ -77,7 +77,7 @@ CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   
 7ca60625b2fd        pepsi               0.00%               0B / 0B             0.00%               0B / 0B             0B / 0B             0
 ```
 
-We can also get the real time logs of the container using `docker logs -f pepsi'. 
+We can also get the real time logs of the container using `docker logs -f pepsi`. 
 
 # Deleting Containers:
 If we exit from a container, it only stops the container and it's state is preserved and next time when it is attached again state is reloaded again.
